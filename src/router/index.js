@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Index from "@/views/Index.vue";
 import Button from "@/views/Button.vue";
-import Link1 from "@/views/Link1.vue"
-import Table from "@/views/Table.vue"
+import Checkbox from "@/views/Checkbox.vue";
+import Table from "@/views/Table.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -18,9 +18,9 @@ const router = createRouter({
       component: Button,
     },
     {
-      path: "/link1",
-      name: "Link1",
-      component: Link1,
+      path: "/checkbox",
+      name: "Checkbox",
+      component: Checkbox,
     },
     {
       path: "/table",

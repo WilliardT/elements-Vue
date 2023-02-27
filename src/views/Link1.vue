@@ -1,4 +1,0 @@
-<template>
-  <h1>H1</h1>
-  <h2>h2</h2>
-</template>

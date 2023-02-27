@@ -24,7 +24,18 @@ const props = defineProps({
     type: String,
     required: false,
   },
+  size: {
+    type: String,
+    default: 'normal',
+  },
+
 });
+
+const emit = defineEmits(['clickToButton'])
+
+const clickOnButton = () => {
+  emit('clickToButton')
+}
 </script>
 
 <template>
@@ -35,8 +46,10 @@ const props = defineProps({
       { btn_rounded: rounded },
       { btn_outlined: outlined },
       { btn_icon: outlined },
+      { btn_large: size === 'large' },
     ]"
     :disabled="disabled"
+    @click="clickOnButton"
   >
     <span v-if="icon">
       <font-awesome-icon :icon="`fa-regular fa-${icon}`" />

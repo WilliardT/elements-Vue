@@ -9,7 +9,7 @@ const props = defineProps({
 })
 
 const links = ref([
- {name: 'Link1', href: '/link1'},
+ {name: 'Checkbox', href: '/checkbox'},
  {name: 'Button', href: '/button'},
  {name: 'Table', href: '/table'},
 ])
